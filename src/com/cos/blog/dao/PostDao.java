@@ -98,6 +98,7 @@ public class PostDao {
 			pstmt2.setInt(1, rs.getInt("readCount")+1);
 			pstmt2.setInt(2, Integer.parseInt(postId));
 			int n = pstmt2.executeUpdate();
+			System.out.println("1231");
 			
 			return post;
 		
